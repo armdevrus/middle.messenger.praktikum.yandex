@@ -1,0 +1,212 @@
+.formAuth {
+  width: 340px;
+  height: 450px;
+  border: 1px solid #d3d3d3;
+  border-radius: 12px;
+  margin: 0 auto;
+  padding: 50px 30px 30px;
+  transform: translateY(20%);
+  box-shadow: 0 0 6px #00000024;
+}
+
+.formAuth__block_third {
+  margin-top: 150px;
+  position: relative;
+}
+
+.formReg {
+  width: 340px;
+  height: 615px;
+  border: 1px solid #d3d3d3;
+  border-radius: 12px;
+  margin: 0 auto;
+  padding: 50px 30px 30px;
+  transform: translateY(1%);
+  box-shadow: 0 0 6px #00000024;
+}
+
+.formReg__block_third {
+  margin-top: 60px;
+}
+
+.chatlist {
+  display: flex;
+}
+
+.chatlist__leftCol {
+  width: 310px;
+  height: 720px;
+  background: #fbfbfb;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+}
+
+.leftCol__head {
+  flex-direction: column;
+  display: flex;
+}
+
+.chatlist__rightCol {
+  width: 970px;
+}
+
+.errorser {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.title {
+  text-align: center;
+  color: #1e1e1e;
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.name {
+  color: #999;
+  font-family: Inter;
+  font-size: 9px;
+  line-height: 9px;
+}
+
+.errorser__title_num, .errorcli__title_num {
+  text-align: center;
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.errorser__title_message, .errorcli__title_message {
+  letter-spacing: 0;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.profile__content_data {
+  color: gray;
+  font-weight: 300;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #00f;
+  outline: none;
+  margin-bottom: 16px;
+}
+
+.input__search {
+  height: 32px;
+  text-indent: 10px;
+  background: #efefef;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin: 50px 10px 15px;
+}
+
+.button_up {
+  width: 100%;
+  height: 37px;
+  color: #fff;
+  background: #3369f3;
+  border: none;
+  border-radius: 8px;
+}
+
+.button_down {
+  width: 100%;
+  height: 37px;
+  color: #3369f3;
+  background: #fff;
+  border: none;
+  border-radius: 8px;
+}
+
+.button_goToProfile {
+  color: gray;
+  width: 100px;
+  background: none;
+  border: none;
+  margin-top: 7px;
+  padding: 5px;
+  font-family: Inter;
+  font-size: 18px;
+  position: absolute;
+  right: 0;
+}
+
+.errorser__btn, .errorcli__btn {
+  color: #3369f3;
+  background: none;
+  border: none;
+  padding: 5px;
+  font-family: Inter;
+  font-size: 11px;
+  transform: translateX(30px);
+}
+
+.profile__footer_btn {
+  color: #3369f3;
+  width: 150px;
+  text-align: start;
+  background: none;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.out {
+  color: red;
+}
+
+#app {
+  height: 720px;
+  width: 1280px;
+}
+
+.errorcli {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.profile {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.profile__wrapper {
+  width: 510px;
+}
+
+.profile__head {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.profile__content_wrapper {
+  border-bottom: 1px solid #d3d3d3;
+  justify-content: space-between;
+  display: flex;
+}
+
+.profile__footer {
+  flex-direction: column;
+  margin-top: 50px;
+  display: flex;
+}
+
+
+
+/*# sourceMappingURL=index.0122106f.css.map */

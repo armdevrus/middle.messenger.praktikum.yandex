@@ -564,12 +564,22 @@ var _regHbs = require("./pages/registration/reg.hbs");
 var _regHbsDefault = parcelHelpers.interopDefault(_regHbs);
 var _chatlistHbs = require("./pages/chatlist/chatlist.hbs");
 var _chatlistHbsDefault = parcelHelpers.interopDefault(_chatlistHbs);
+var _errorserHbs = require("./pages/errorserver/errorser.hbs");
+var _errorserHbsDefault = parcelHelpers.interopDefault(_errorserHbs);
+var _errorcliHbs = require("./pages/errorclient/errorcli.hbs");
+var _errorcliHbsDefault = parcelHelpers.interopDefault(_errorcliHbs);
+var _profileHbs = require("./pages/profile/profile.hbs");
+var _profileHbsDefault = parcelHelpers.interopDefault(_profileHbs);
 var _authorization = require("./pages/authorization");
 var _registration = require("./pages/registration");
 var _chatlist = require("./pages/chatlist");
+var _errorserver = require("./pages/errorserver");
+var _errorclient = require("./pages/errorclient");
+var _profile = require("./pages/profile");
 var _title = require("./components/title");
 var _input = require("./components/input");
 var _button = require("./components/button");
+var _img = require("./components/img");
 var _indexPcss = require("./index.pcss");
 function render(html) {
     const app = document.querySelector("#app");
@@ -578,7 +588,10 @@ function render(html) {
 const ROUTES = {
     "signin": (0, _authHbsDefault.default),
     "signup": (0, _regHbsDefault.default),
-    "chatlist": (0, _chatlistHbsDefault.default)
+    "chatlist": (0, _chatlistHbsDefault.default),
+    "errorser": (0, _errorserHbsDefault.default),
+    "errorcli": (0, _errorcliHbsDefault.default),
+    "profile": (0, _profileHbsDefault.default)
 };
 window.goToPage = function(name) {
     const page = ROUTES[name];
@@ -589,41 +602,11 @@ window.addEventListener("DOMContentLoaded", ()=>{
         class: "formAuth",
         post: "post"
     };
-    render(ROUTES.chatlist());
+    render(ROUTES.profile());
 // render(ROUTES.signin(context));
 });
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./pages/authorization/auth.hbs":"hKnAy","./pages/registration/reg.hbs":"kl7vS","./components/title":"ibW24","./components/input":"8Cm93","./components/button":"f08eE","./index.pcss":"jIaTT","./pages/authorization":"1VQtU","./pages/registration":"fSkHX","./pages/chatlist/chatlist.hbs":"aZnzr","./pages/chatlist":"lE7Jt"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"hKnAy":[function(require,module,exports) {
+},{"./pages/authorization/auth.hbs":"hKnAy","./pages/registration/reg.hbs":"kl7vS","./pages/chatlist/chatlist.hbs":"aZnzr","./pages/errorserver/errorser.hbs":"dBksN","./pages/errorclient/errorcli.hbs":"heQiC","./pages/authorization":"1VQtU","./pages/registration":"fSkHX","./pages/chatlist":"lE7Jt","./pages/errorserver":"gc4oq","./components/title":"ibW24","./components/input":"8Cm93","./components/button":"f08eE","./index.pcss":"jIaTT","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./pages/errorclient":"ipAYy","./pages/profile":"14hhl","./pages/profile/profile.hbs":"hpzTq","./components/img":"ejAdu"}],"hKnAy":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _handlebarsRuntime = require("handlebars/dist/handlebars.runtime");
@@ -1966,6 +1949,36 @@ THE SOFTWARE.
     ]);
 });
 
+},{}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
 },{}],"kl7vS":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
@@ -2175,7 +2188,197 @@ const templateFunction = (0, _handlebarsRuntimeDefault.default).template({
 });
 exports.default = templateFunction;
 
-},{"handlebars/dist/handlebars.runtime":"b7ZpO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ibW24":[function(require,module,exports) {
+},{"handlebars/dist/handlebars.runtime":"b7ZpO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aZnzr":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _handlebarsRuntime = require("handlebars/dist/handlebars.runtime");
+var _handlebarsRuntimeDefault = parcelHelpers.interopDefault(_handlebarsRuntime);
+const templateFunction = (0, _handlebarsRuntimeDefault.default).template({
+    "compiler": [
+        8,
+        ">= 4.3.0"
+    ],
+    "main": function(container, depth0, helpers, partials, data) {
+        var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+            if (Object.prototype.hasOwnProperty.call(parent, propertyName)) return parent[propertyName];
+            return undefined;
+        };
+        return '<div class="chatlist">\n    <div class="chatlist__leftCol">\n        <div class="leftCol__head">\n' + ((stack1 = container.invokePartial(lookupProperty(partials, "button"), depth0, {
+            "name": "button",
+            "hash": {
+                "title": "Профиль >",
+                "class": "button_goToProfile"
+            },
+            "data": data,
+            "indent": "            ",
+            "helpers": helpers,
+            "partials": partials,
+            "decorators": container.decorators
+        })) != null ? stack1 : "") + ((stack1 = container.invokePartial(lookupProperty(partials, "input"), depth0, {
+            "name": "input",
+            "hash": {
+                "type": "text",
+                "class": "input__search"
+            },
+            "data": data,
+            "indent": "            ",
+            "helpers": helpers,
+            "partials": partials,
+            "decorators": container.decorators
+        })) != null ? stack1 : "") + '        </div>\n        <div class="leftCol__content">\n            Список чатов\n        </div>\n    </div>\n    <div class="chatlist__rightCol">\n        Лента переписки\n    </div>\n</div>\n   ';
+    },
+    "usePartial": true,
+    "useData": true
+});
+exports.default = templateFunction;
+
+},{"handlebars/dist/handlebars.runtime":"b7ZpO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dBksN":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _handlebarsRuntime = require("handlebars/dist/handlebars.runtime");
+var _handlebarsRuntimeDefault = parcelHelpers.interopDefault(_handlebarsRuntime);
+const templateFunction = (0, _handlebarsRuntimeDefault.default).template({
+    "compiler": [
+        8,
+        ">= 4.3.0"
+    ],
+    "main": function(container, depth0, helpers, partials, data) {
+        var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+            if (Object.prototype.hasOwnProperty.call(parent, propertyName)) return parent[propertyName];
+            return undefined;
+        };
+        return '<div class="errorser">\n    <div class="errorser__content">\n' + ((stack1 = container.invokePartial(lookupProperty(partials, "title"), depth0, {
+            "name": "title",
+            "hash": {
+                "title": "500",
+                "class": "errorser__title_num"
+            },
+            "data": data,
+            "indent": "   ",
+            "helpers": helpers,
+            "partials": partials,
+            "decorators": container.decorators
+        })) != null ? stack1 : "") + ((stack1 = container.invokePartial(lookupProperty(partials, "title"), depth0, {
+            "name": "title",
+            "hash": {
+                "title": "Мы уже фиксим",
+                "class": "errorser__title_message"
+            },
+            "data": data,
+            "indent": "    ",
+            "helpers": helpers,
+            "partials": partials,
+            "decorators": container.decorators
+        })) != null ? stack1 : "") + ((stack1 = container.invokePartial(lookupProperty(partials, "button"), depth0, {
+            "name": "button",
+            "hash": {
+                "title": "Назад к чатам",
+                "class": "errorser__btn"
+            },
+            "data": data,
+            "indent": "    ",
+            "helpers": helpers,
+            "partials": partials,
+            "decorators": container.decorators
+        })) != null ? stack1 : "") + "    </div>\n \n</div>";
+    },
+    "usePartial": true,
+    "useData": true
+});
+exports.default = templateFunction;
+
+},{"handlebars/dist/handlebars.runtime":"b7ZpO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"heQiC":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _handlebarsRuntime = require("handlebars/dist/handlebars.runtime");
+var _handlebarsRuntimeDefault = parcelHelpers.interopDefault(_handlebarsRuntime);
+const templateFunction = (0, _handlebarsRuntimeDefault.default).template({
+    "compiler": [
+        8,
+        ">= 4.3.0"
+    ],
+    "main": function(container, depth0, helpers, partials, data) {
+        var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+            if (Object.prototype.hasOwnProperty.call(parent, propertyName)) return parent[propertyName];
+            return undefined;
+        };
+        return '<div class="errorcli">\n    <div class="errorcli__content">\n' + ((stack1 = container.invokePartial(lookupProperty(partials, "title"), depth0, {
+            "name": "title",
+            "hash": {
+                "title": "404",
+                "class": "errorcli__title_num"
+            },
+            "data": data,
+            "indent": "   ",
+            "helpers": helpers,
+            "partials": partials,
+            "decorators": container.decorators
+        })) != null ? stack1 : "") + ((stack1 = container.invokePartial(lookupProperty(partials, "title"), depth0, {
+            "name": "title",
+            "hash": {
+                "title": "Не туда попали",
+                "class": "errorcli__title_message"
+            },
+            "data": data,
+            "indent": "    ",
+            "helpers": helpers,
+            "partials": partials,
+            "decorators": container.decorators
+        })) != null ? stack1 : "") + ((stack1 = container.invokePartial(lookupProperty(partials, "button"), depth0, {
+            "name": "button",
+            "hash": {
+                "title": "Назад к чатам",
+                "class": "errorcli__btn"
+            },
+            "data": data,
+            "indent": "    ",
+            "helpers": helpers,
+            "partials": partials,
+            "decorators": container.decorators
+        })) != null ? stack1 : "") + "    </div>\n</div>";
+    },
+    "usePartial": true,
+    "useData": true
+});
+exports.default = templateFunction;
+
+},{"handlebars/dist/handlebars.runtime":"b7ZpO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"1VQtU":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+var _authHbs = require("./auth.hbs");
+var _authHbsDefault = parcelHelpers.interopDefault(_authHbs);
+var _handlebarsRuntime = require("handlebars/dist/handlebars.runtime");
+var _handlebarsRuntimeDefault = parcelHelpers.interopDefault(_handlebarsRuntime);
+var _authPcss = require("./auth.pcss");
+(0, _handlebarsRuntimeDefault.default).registerPartial("auth", (0, _authHbsDefault.default));
+
+},{"./auth.hbs":"hKnAy","handlebars/dist/handlebars.runtime":"b7ZpO","./auth.pcss":"fBRLU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fBRLU":[function() {},{}],"fSkHX":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+var _regHbs = require("./reg.hbs");
+var _regHbsDefault = parcelHelpers.interopDefault(_regHbs);
+var _handlebarsRuntime = require("handlebars/dist/handlebars.runtime");
+var _handlebarsRuntimeDefault = parcelHelpers.interopDefault(_handlebarsRuntime);
+var _regPcss = require("./reg.pcss");
+(0, _handlebarsRuntimeDefault.default).registerPartial("reg", (0, _regHbsDefault.default));
+
+},{"./reg.hbs":"kl7vS","handlebars/dist/handlebars.runtime":"b7ZpO","./reg.pcss":"4px26","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4px26":[function() {},{}],"lE7Jt":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+var _chatlistHbs = require("./chatlist.hbs");
+var _chatlistHbsDefault = parcelHelpers.interopDefault(_chatlistHbs);
+var _handlebarsRuntime = require("handlebars/dist/handlebars.runtime");
+var _handlebarsRuntimeDefault = parcelHelpers.interopDefault(_handlebarsRuntime);
+var _chatlistPcss = require("./chatlist.pcss");
+(0, _handlebarsRuntimeDefault.default).registerPartial("chastlist", (0, _chatlistHbsDefault.default));
+
+},{"./chatlist.hbs":"aZnzr","handlebars/dist/handlebars.runtime":"b7ZpO","./chatlist.pcss":"cPSxs","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cPSxs":[function() {},{}],"gc4oq":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+var _errorserHbs = require("./errorser.hbs");
+var _errorserHbsDefault = parcelHelpers.interopDefault(_errorserHbs);
+var _handlebarsRuntime = require("handlebars/dist/handlebars.runtime");
+var _handlebarsRuntimeDefault = parcelHelpers.interopDefault(_handlebarsRuntime);
+var _errorserPcss = require("./errorser.pcss");
+(0, _handlebarsRuntimeDefault.default).registerPartial("errorser", (0, _errorserHbsDefault.default));
+
+},{"./errorser.hbs":"dBksN","handlebars/dist/handlebars.runtime":"b7ZpO","./errorser.pcss":"97V3H","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"97V3H":[function() {},{}],"ibW24":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _titleHbs = require("./title.hbs");
 var _titleHbsDefault = parcelHelpers.interopDefault(_titleHbs);
@@ -2363,25 +2566,25 @@ const templateFunction = (0, _handlebarsRuntimeDefault.default).template({
 });
 exports.default = templateFunction;
 
-},{"handlebars/dist/handlebars.runtime":"b7ZpO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eEF87":[function() {},{}],"jIaTT":[function() {},{}],"1VQtU":[function(require,module,exports) {
+},{"handlebars/dist/handlebars.runtime":"b7ZpO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eEF87":[function() {},{}],"jIaTT":[function() {},{}],"ipAYy":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-var _authHbs = require("./auth.hbs");
-var _authHbsDefault = parcelHelpers.interopDefault(_authHbs);
+var _errorcliHbs = require("./errorcli.hbs");
+var _errorcliHbsDefault = parcelHelpers.interopDefault(_errorcliHbs);
 var _handlebarsRuntime = require("handlebars/dist/handlebars.runtime");
 var _handlebarsRuntimeDefault = parcelHelpers.interopDefault(_handlebarsRuntime);
-var _authPcss = require("./auth.pcss");
-(0, _handlebarsRuntimeDefault.default).registerPartial("auth", (0, _authHbsDefault.default));
+var _errorcliPcss = require("./errorcli.pcss");
+(0, _handlebarsRuntimeDefault.default).registerPartial("errorcli", (0, _errorcliHbsDefault.default));
 
-},{"./auth.hbs":"hKnAy","handlebars/dist/handlebars.runtime":"b7ZpO","./auth.pcss":"fBRLU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"fBRLU":[function() {},{}],"fSkHX":[function(require,module,exports) {
+},{"./errorcli.hbs":"heQiC","handlebars/dist/handlebars.runtime":"b7ZpO","./errorcli.pcss":"jlNyz","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jlNyz":[function() {},{}],"14hhl":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-var _regHbs = require("./reg.hbs");
-var _regHbsDefault = parcelHelpers.interopDefault(_regHbs);
+var _profileHbs = require("./profile.hbs");
+var _profileHbsDefault = parcelHelpers.interopDefault(_profileHbs);
 var _handlebarsRuntime = require("handlebars/dist/handlebars.runtime");
 var _handlebarsRuntimeDefault = parcelHelpers.interopDefault(_handlebarsRuntime);
-var _regPcss = require("./reg.pcss");
-(0, _handlebarsRuntimeDefault.default).registerPartial("reg", (0, _regHbsDefault.default));
+var _profilePcss = require("./profile.pcss");
+(0, _handlebarsRuntimeDefault.default).registerPartial("profile", (0, _profileHbsDefault.default));
 
-},{"./reg.hbs":"kl7vS","handlebars/dist/handlebars.runtime":"b7ZpO","./reg.pcss":"4px26","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4px26":[function() {},{}],"aZnzr":[function(require,module,exports) {
+},{"./profile.hbs":"hpzTq","handlebars/dist/handlebars.runtime":"b7ZpO","./profile.pcss":"2XPsy","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hpzTq":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _handlebarsRuntime = require("handlebars/dist/handlebars.runtime");
@@ -2396,44 +2599,276 @@ const templateFunction = (0, _handlebarsRuntimeDefault.default).template({
             if (Object.prototype.hasOwnProperty.call(parent, propertyName)) return parent[propertyName];
             return undefined;
         };
-        return '<div class="chatlist">\n    <div class="chatlist__leftCol">\n        <div class="leftCol__head">\n' + ((stack1 = container.invokePartial(lookupProperty(partials, "button"), depth0, {
+        return '<div class="profile">\n' + ((stack1 = container.invokePartial(lookupProperty(partials, "button"), depth0, {
             "name": "button",
             "hash": {
-                "title": "Профиль >",
-                "class": "button_goToProfile"
+                "title": "&#8592",
+                "class": "profile__button_back"
             },
             "data": data,
-            "indent": "            ",
+            "indent": "    ",
             "helpers": helpers,
             "partials": partials,
             "decorators": container.decorators
-        })) != null ? stack1 : "") + ((stack1 = container.invokePartial(lookupProperty(partials, "input"), depth0, {
-            "name": "input",
+        })) != null ? stack1 : "") + '    <button>&#8592;</button>\n    <div class="profile__wrapper">\n        <div class="profile__head">\n' + ((stack1 = container.invokePartial(lookupProperty(partials, "img"), depth0, {
+            "name": "img",
             "hash": {
-                "type": "text",
-                "class": "input__search"
+                "alt": "Ellipse",
+                "src": "../../images/Ellipse.png"
+            },
+            "data": data,
+            "indent": "        ",
+            "helpers": helpers,
+            "partials": partials,
+            "decorators": container.decorators
+        })) != null ? stack1 : "") + ((stack1 = container.invokePartial(lookupProperty(partials, "title"), depth0, {
+            "name": "title",
+            "hash": {
+                "title": "Иван"
+            },
+            "data": data,
+            "indent": "        ",
+            "helpers": helpers,
+            "partials": partials,
+            "decorators": container.decorators
+        })) != null ? stack1 : "") + '        </div>\n        <div class="profile__content">\n           <div class="profile__content_wrapper">\n' + ((stack1 = container.invokePartial(lookupProperty(partials, "title"), depth0, {
+            "name": "title",
+            "hash": {
+                "title": "Почта"
             },
             "data": data,
             "indent": "            ",
             "helpers": helpers,
             "partials": partials,
             "decorators": container.decorators
-        })) != null ? stack1 : "") + '        </div>\n        <div class="leftCol__content">\n            Список чатов\n        </div>\n    </div>\n    <div class="chatlist__rightCol">\n        Лента переписки\n    </div>\n</div>\n   ';
+        })) != null ? stack1 : "") + ((stack1 = container.invokePartial(lookupProperty(partials, "title"), depth0, {
+            "name": "title",
+            "hash": {
+                "class": "profile__content_data",
+                "title": "pochta@yandex.ru"
+            },
+            "data": data,
+            "indent": "            ",
+            "helpers": helpers,
+            "partials": partials,
+            "decorators": container.decorators
+        })) != null ? stack1 : "") + '           </div>\n           <div class="profile__content_wrapper">\n' + ((stack1 = container.invokePartial(lookupProperty(partials, "title"), depth0, {
+            "name": "title",
+            "hash": {
+                "title": "Логин"
+            },
+            "data": data,
+            "indent": "            ",
+            "helpers": helpers,
+            "partials": partials,
+            "decorators": container.decorators
+        })) != null ? stack1 : "") + ((stack1 = container.invokePartial(lookupProperty(partials, "title"), depth0, {
+            "name": "title",
+            "hash": {
+                "class": "profile__content_data",
+                "title": "ivanivanov"
+            },
+            "data": data,
+            "indent": "            ",
+            "helpers": helpers,
+            "partials": partials,
+            "decorators": container.decorators
+        })) != null ? stack1 : "") + '           </div>\n           <div class="profile__content_wrapper">\n' + ((stack1 = container.invokePartial(lookupProperty(partials, "title"), depth0, {
+            "name": "title",
+            "hash": {
+                "title": "Имя"
+            },
+            "data": data,
+            "indent": "            ",
+            "helpers": helpers,
+            "partials": partials,
+            "decorators": container.decorators
+        })) != null ? stack1 : "") + ((stack1 = container.invokePartial(lookupProperty(partials, "title"), depth0, {
+            "name": "title",
+            "hash": {
+                "class": "profile__content_data",
+                "title": "Иван"
+            },
+            "data": data,
+            "indent": "            ",
+            "helpers": helpers,
+            "partials": partials,
+            "decorators": container.decorators
+        })) != null ? stack1 : "") + '           </div>\n           <div class="profile__content_wrapper">\n' + ((stack1 = container.invokePartial(lookupProperty(partials, "title"), depth0, {
+            "name": "title",
+            "hash": {
+                "title": "Фаимлия"
+            },
+            "data": data,
+            "indent": "            ",
+            "helpers": helpers,
+            "partials": partials,
+            "decorators": container.decorators
+        })) != null ? stack1 : "") + ((stack1 = container.invokePartial(lookupProperty(partials, "title"), depth0, {
+            "name": "title",
+            "hash": {
+                "class": "profile__content_data",
+                "title": "Иванов"
+            },
+            "data": data,
+            "indent": "            ",
+            "helpers": helpers,
+            "partials": partials,
+            "decorators": container.decorators
+        })) != null ? stack1 : "") + '           </div>\n           <div class="profile__content_wrapper">\n' + ((stack1 = container.invokePartial(lookupProperty(partials, "title"), depth0, {
+            "name": "title",
+            "hash": {
+                "title": "Имя в чате"
+            },
+            "data": data,
+            "indent": "            ",
+            "helpers": helpers,
+            "partials": partials,
+            "decorators": container.decorators
+        })) != null ? stack1 : "") + ((stack1 = container.invokePartial(lookupProperty(partials, "title"), depth0, {
+            "name": "title",
+            "hash": {
+                "class": "profile__content_data",
+                "title": "Иван"
+            },
+            "data": data,
+            "indent": "            ",
+            "helpers": helpers,
+            "partials": partials,
+            "decorators": container.decorators
+        })) != null ? stack1 : "") + '           </div>\n           <div class="profile__content_wrapper">\n' + ((stack1 = container.invokePartial(lookupProperty(partials, "title"), depth0, {
+            "name": "title",
+            "hash": {
+                "title": "Телефон"
+            },
+            "data": data,
+            "indent": "            ",
+            "helpers": helpers,
+            "partials": partials,
+            "decorators": container.decorators
+        })) != null ? stack1 : "") + ((stack1 = container.invokePartial(lookupProperty(partials, "title"), depth0, {
+            "name": "title",
+            "hash": {
+                "class": "profile__content_data",
+                "title": "+7 (909) 987-39-30"
+            },
+            "data": data,
+            "indent": "            ",
+            "helpers": helpers,
+            "partials": partials,
+            "decorators": container.decorators
+        })) != null ? stack1 : "") + '           </div>\n        </div>\n        <div class="profile__footer">\n' + ((stack1 = container.invokePartial(lookupProperty(partials, "button"), depth0, {
+            "name": "button",
+            "hash": {
+                "title": "Изменить данные",
+                "class": "profile__footer_btn"
+            },
+            "data": data,
+            "indent": "            ",
+            "helpers": helpers,
+            "partials": partials,
+            "decorators": container.decorators
+        })) != null ? stack1 : "") + ((stack1 = container.invokePartial(lookupProperty(partials, "button"), depth0, {
+            "name": "button",
+            "hash": {
+                "title": "Изменить пароль",
+                "class": "profile__footer_btn"
+            },
+            "data": data,
+            "indent": "            ",
+            "helpers": helpers,
+            "partials": partials,
+            "decorators": container.decorators
+        })) != null ? stack1 : "") + ((stack1 = container.invokePartial(lookupProperty(partials, "button"), depth0, {
+            "name": "button",
+            "hash": {
+                "title": "Выйти",
+                "class": "profile__footer_btn out"
+            },
+            "data": data,
+            "indent": "            ",
+            "helpers": helpers,
+            "partials": partials,
+            "decorators": container.decorators
+        })) != null ? stack1 : "") + "        </div>\n    </div>    \n</div>\n   ";
     },
     "usePartial": true,
     "useData": true
 });
 exports.default = templateFunction;
 
-},{"handlebars/dist/handlebars.runtime":"b7ZpO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lE7Jt":[function(require,module,exports) {
+},{"handlebars/dist/handlebars.runtime":"b7ZpO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2XPsy":[function() {},{}],"ejAdu":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-var _chatlistHbs = require("./chatlist.hbs");
-var _chatlistHbsDefault = parcelHelpers.interopDefault(_chatlistHbs);
+var _imgHbs = require("./img.hbs");
+var _imgHbsDefault = parcelHelpers.interopDefault(_imgHbs);
 var _handlebarsRuntime = require("handlebars/dist/handlebars.runtime");
 var _handlebarsRuntimeDefault = parcelHelpers.interopDefault(_handlebarsRuntime);
-var _chatlistPcss = require("./chatlist.pcss");
-(0, _handlebarsRuntimeDefault.default).registerPartial("chastlist", (0, _chatlistHbsDefault.default));
+var _imgPcss = require("./img.pcss");
+(0, _handlebarsRuntimeDefault.default).registerPartial("img", (0, _imgHbsDefault.default));
 
-},{"handlebars/dist/handlebars.runtime":"b7ZpO","./chatlist.pcss":"cPSxs","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./chatlist.hbs":"aZnzr"}],"cPSxs":[function() {},{}]},["jC2qd","8lqZg"], "8lqZg", "parcelRequirefc40")
+},{"./img.hbs":"lV1du","handlebars/dist/handlebars.runtime":"b7ZpO","./img.pcss":"iSWu3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lV1du":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _handlebarsRuntime = require("handlebars/dist/handlebars.runtime");
+var _handlebarsRuntimeDefault = parcelHelpers.interopDefault(_handlebarsRuntime);
+const templateFunction = (0, _handlebarsRuntimeDefault.default).template({
+    "compiler": [
+        8,
+        ">= 4.3.0"
+    ],
+    "main": function(container, depth0, helpers, partials, data) {
+        var helper, alias1 = depth0 != null ? depth0 : container.nullContext || {}, alias2 = container.hooks.helperMissing, alias3 = "function", alias4 = container.escapeExpression, lookupProperty = container.lookupProperty || function(parent, propertyName) {
+            if (Object.prototype.hasOwnProperty.call(parent, propertyName)) return parent[propertyName];
+            return undefined;
+        };
+        return '<img class="' + alias4((helper = (helper = lookupProperty(helpers, "class") || (depth0 != null ? lookupProperty(depth0, "class") : depth0)) != null ? helper : alias2, typeof helper === alias3 ? helper.call(alias1, {
+            "name": "class",
+            "hash": {},
+            "data": data,
+            "loc": {
+                "start": {
+                    "line": 1,
+                    "column": 12
+                },
+                "end": {
+                    "line": 1,
+                    "column": 21
+                }
+            }
+        }) : helper)) + '" src="' + alias4((helper = (helper = lookupProperty(helpers, "src") || (depth0 != null ? lookupProperty(depth0, "src") : depth0)) != null ? helper : alias2, typeof helper === alias3 ? helper.call(alias1, {
+            "name": "src",
+            "hash": {},
+            "data": data,
+            "loc": {
+                "start": {
+                    "line": 1,
+                    "column": 28
+                },
+                "end": {
+                    "line": 1,
+                    "column": 35
+                }
+            }
+        }) : helper)) + '" alt="' + alias4((helper = (helper = lookupProperty(helpers, "alt") || (depth0 != null ? lookupProperty(depth0, "alt") : depth0)) != null ? helper : alias2, typeof helper === alias3 ? helper.call(alias1, {
+            "name": "alt",
+            "hash": {},
+            "data": data,
+            "loc": {
+                "start": {
+                    "line": 1,
+                    "column": 42
+                },
+                "end": {
+                    "line": 1,
+                    "column": 49
+                }
+            }
+        }) : helper)) + '">\n\n   ';
+    },
+    "useData": true
+});
+exports.default = templateFunction;
+
+},{"handlebars/dist/handlebars.runtime":"b7ZpO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iSWu3":[function() {},{}]},["jC2qd","8lqZg"], "8lqZg", "parcelRequirefc40")
 
 //# sourceMappingURL=index.975ef6c8.js.map
