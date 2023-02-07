@@ -1,0 +1,12 @@
+body {
+  height: 720px;
+  width: 1280px;
+}
+
+.main {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/*# sourceMappingURL=index.ce1d6491.css.map */

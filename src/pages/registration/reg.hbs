@@ -1,0 +1,26 @@
+<form class="formReg" method="post">
+    <div class="formReg__block_first">
+    {{>title class="title" title="Регистрация"}}
+    </div>
+    <div class="formReg__block_second">
+        {{> title class='name' title="Почта"}}
+        {{>input class="input" type="email"}}
+        {{> title class='name' title="Логин"}}
+        {{>input class="input" type="text"}}
+        {{> title class='name' title="Имя"}}
+        {{>input class="input" type="text"}}
+        {{> title class='name' title="Фамилия"}}
+        {{>input class="input" type="text"}}
+        {{> title class='name' title="Телефон"}}
+        {{>input class="input" type="tel"}}
+        {{> title class='name' title="Пароль"}}
+        {{>input class="input" type="password"}}
+        {{> title class='name' title="Пароль (ещё раз)"}}
+        {{>input class="input" type="password"}}
+    </div>
+    <div class="formReg__block_third">
+        {{>button class="button_up" title="Зарегистрироваться"}}
+       {{> button class="button_down" title="Войти"}}
+    </div>
+</form>
+   
