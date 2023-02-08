@@ -1,4 +1,4 @@
-<form class="{{class}}" method="{{post}}">
+<form class="formAuth" method="post">
     <div class="formAuth__block_first">
     {{>title class="title" title="Вход"}}
     </div>
@@ -9,7 +9,7 @@
         {{>input class="input" type="password"}}
     </div>
     <div class="formAuth__block_third">
-        {{>button class="button_up" title="Авторизоваться"}}
+        {{>button class="button_up" title="Авторизоваться" onClick="window.goToPage('chatlist')"}}
         {{>button class="button_down" title="Нет аккаунта?" onClick="window.goToPage('signup')"}}
     </div>
 </form>

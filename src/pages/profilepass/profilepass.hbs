@@ -1,5 +1,5 @@
 <div class="profile">
-    {{> button class="profile__button_back" title="<"}}
+    {{> button class="profile__button_back" title="<" onClick="window.goToPage('chatlist')"}}
     <div class="profile__wrapper">
         <div class="profile__head">
         {{>img avatar=userAvatarUrl alt="Ellipse"}}
@@ -19,7 +19,7 @@
            </div>
         </div>
         <div class="profile__footer">
-            {{> button class="profile__footer_data" title="Сохранить"}}
+            {{> button class="profile__footer_data" title="Сохранить" onClick="window.goToPage('profile')"}}
         </div>
     </div>    
 </div>
