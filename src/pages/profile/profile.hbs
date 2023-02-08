@@ -1,6 +1,5 @@
-
 <div class="profile">
-    {{> button class="profile__button_back" title="<"}}
+    {{> button class="profile__button_back" title="<" onClick="window.goToPage('chatlist')"}}
     <div class="profile__wrapper">
         <div class="profile__head">
         {{>img avatar=userAvatarUrl alt="Ellipse"}}
@@ -33,9 +32,9 @@
            </div>
         </div>
         <div class="profile__footer">
-            {{> button class="profile__footer_btn" title="Изменить данные"}}
-            {{> button class="profile__footer_btn" title="Изменить пароль"}}
-            {{> button class="profile__footer_btn out" title="Выйти"}}
+            {{> button class="profile__footer_btn" title="Изменить данные" onClick="window.goToPage('profiledata')"}}
+            {{> button class="profile__footer_btn" title="Изменить пароль" onClick="window.goToPage('profilepass')"}}
+            {{> button class="profile__footer_btn out" title="Выйти" onClick="window.goToPage('signin')"}}
         </div>
     </div>    
 </div>

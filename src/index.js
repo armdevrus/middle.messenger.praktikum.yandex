@@ -41,13 +41,11 @@ const PROPS = {
   "profile": {
     userAvatarUrl: Ellipse
   },
-   "profiledata": {
+  "profiledata": {
     userAvatarUrl: Ellipse
-
    },
   "profilepass": {
-        userAvatarUrl: Ellipse
-
+    userAvatarUrl: Ellipse
   },
 };
 
@@ -58,9 +56,5 @@ window.goToPage = function (name) {
 };
 
 window.addEventListener("DOMContentLoaded", () => {
-  const context = {
-    class: "formAuth",
-    post: "post",
-  };
-  render(ROUTES.profiledata(PROPS.profile));
+  render(ROUTES.signin());
 });
