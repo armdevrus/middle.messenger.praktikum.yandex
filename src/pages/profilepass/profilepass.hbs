@@ -1,0 +1,26 @@
+<div class="profile">
+    {{> button class="profile__button_back" title="<"}}
+    <div class="profile__wrapper">
+        <div class="profile__head">
+        {{>img src="../../images/Ellipse.png" alt="Ellipse"}}
+        </div>
+        <div class="profile__content">
+           <div class="profile__content_wrapper">
+            {{>title title="Старый пароль"}}
+            {{> input class="profile__content_input" type="text" placeholder="********"}}
+           </div>
+           <div class="profile__content_wrapper">
+            {{>title title="Новый пароль"}}
+            {{> input class="profile__content_input" type="text" placeholder="********"}}
+           </div>
+           <div class="profile__content_wrapper">
+            {{>title title="Повторите новый пароль"}}
+            {{> input class="profile__content_input" type="text" placeholder="********"}}
+           </div>
+        </div>
+        <div class="profile__footer">
+            {{> button class="profile__footer_data" title="Сохранить"}}
+        </div>
+    </div>    
+</div>
+   

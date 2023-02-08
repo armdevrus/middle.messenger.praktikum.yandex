@@ -1,0 +1,38 @@
+<div class="profile">
+    {{> button class="profile__button_back" title="<"}}
+    <div class="profile__wrapper">
+        <div class="profile__head">
+        {{>img src="../../images/Ellipse.png" alt="Ellipse"}}
+        </div>
+        <div class="profile__content">
+           <div class="profile__content_wrapper">
+            {{>title title="Почта"}}
+            {{> input class="profile__content_input" type="text" placeholder="pochta@yandex.ru"}}
+           </div>
+           <div class="profile__content_wrapper">
+            {{>title title="Логин"}}
+            {{> input class="profile__content_input" type="text" placeholder="ivanivanov"}}
+           </div>
+           <div class="profile__content_wrapper">
+            {{>title title="Имя"}}
+            {{> input class="profile__content_input" type="text" placeholder="Иван"}}
+           </div>
+           <div class="profile__content_wrapper">
+            {{>title title="Фамилия"}}
+            {{> input class="profile__content_input" type="text" placeholder="Иванов"}}
+           </div>
+           <div class="profile__content_wrapper">
+            {{>title title="Имя в чате"}}
+            {{> input class="profile__content_input" type="text" placeholder="Иван"}}
+           </div>
+           <div class="profile__content_wrapper">
+            {{>title title="Телефон"}}
+            {{> input class="profile__content_input" type="text" placeholder="+7 (900) 957-09-80"}}
+           </div>
+        </div>
+        <div class="profile__footer">
+            {{> button class="profile__footer_data" title="Сохранить"}}
+        </div>
+    </div>    
+</div>
+   
