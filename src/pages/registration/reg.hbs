@@ -2,25 +2,27 @@
     <div class="formReg__block_first">
     {{>title class="title" title="Регистрация"}}
     </div>
-    <div class="formReg__block_second">
-        {{> title class='name' title="Почта"}}
-        {{>input class="input" type="email"}}
-        {{> title class='name' title="Логин"}}
-        {{>input class="input" type="text"}}
-        {{> title class='name' title="Имя"}}
-        {{>input class="input" type="text"}}
-        {{> title class='name' title="Фамилия"}}
-        {{>input class="input" type="text"}}
-        {{> title class='name' title="Телефон"}}
-        {{>input class="input" type="tel"}}
-        {{> title class='name' title="Пароль"}}
-        {{>input class="input" type="password"}}
-        {{> title class='name' title="Пароль (ещё раз)"}}
-        {{>input class="input" type="password"}}
-    </div>
-    <div class="formReg__block_third">
-        {{>button class="button_up" title="Зарегистрироваться" onClick="window.goToPage('chatlist')"}}
-       {{> button class="button_down" title="Войти" onClick="window.goToPage('chatlist')"}}
-    </div>
+    <form>
+        <div class="formReg__block_second">
+            {{> title class='name' title="Почта"}}
+            {{>input class="input" name="email" type="email"}}
+            {{> title class='name' title="Логин"}}
+            {{>input class="input" name="login" type="text"}}
+            {{> title class='name' title="Имя"}}
+            {{>input class="input" name="first_name" type="text"}}
+            {{> title class='name' title="Фамилия"}}
+            {{>input class="input" name="second_name" type="text"}}
+            {{> title class='name' title="Телефон"}}
+            {{>input class="input" name="phone" type="tel"}}
+            {{> title class='name' title="Пароль"}}
+            {{>input class="input" name="password" type="password"}}
+            {{> title class='name' title="Пароль (ещё раз)"}}
+            {{>input class="input" name="password" type="password"}}
+        </div>
+        <div class="formReg__block_third">
+            {{> button class="button_up" type="submit" title="Зарегистрироваться" onClick="window.goToPage('chatlist')"}}
+            {{> button class="button_down" type="submit" title="Войти" onClick="window.goToPage('chatlist')"}}
+        </div>
+    </form>
 </form>
    

@@ -2,15 +2,17 @@
     <div class="formAuth__block_first">
     {{>title class="title" title="Вход"}}
     </div>
-    <div class="formAuth__block_second">
-        {{> title class='name' title="Логин"}}
-        {{>input class="input" type="text"}}
-        {{> title class='name' title="Пароль"}}
-        {{>input class="input" type="password"}}
-    </div>
-    <div class="formAuth__block_third">
-        {{>button class="button_up" title="Авторизоваться" onClick="window.goToPage('chatlist')"}}
-        {{>button class="button_down" title="Нет аккаунта?" onClick="window.goToPage('signup')"}}
-    </div>
+    <form>
+        <div class="formAuth__block_second">
+            {{> title class='name' title="Логин"}}
+            {{>input class="input" type="text" name="login"}}
+            {{> title class='name' title="Пароль"}}
+            {{>input class="input" type="password" name="password"}}
+        </div>
+        <div class="formAuth__block_third">
+            {{>button type="submit" class="button_up" title="Авторизоваться" onClick="window.goToPage('chatlist')"}}
+            {{>button type="submit" class="button_down" title="Нет аккаунта?" onClick="window.goToPage('signup')"}}
+        </div>
+    </form>
 </form>
    

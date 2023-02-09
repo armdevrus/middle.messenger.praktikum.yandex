@@ -4,23 +4,25 @@
         <div class="profile__head">
         {{>img avatar=userAvatarUrl alt="Ellipse"}}
         </div>
-        <div class="profile__content">
-           <div class="profile__content_wrapper">
-            {{>title title="Старый пароль"}}
-            {{> input class="profile__content_input" type="text" placeholder="********"}}
-           </div>
-           <div class="profile__content_wrapper">
-            {{>title title="Новый пароль"}}
-            {{> input class="profile__content_input" type="text" placeholder="********"}}
-           </div>
-           <div class="profile__content_wrapper">
-            {{>title title="Повторите новый пароль"}}
-            {{> input class="profile__content_input" type="text" placeholder="********"}}
-           </div>
-        </div>
-        <div class="profile__footer">
-            {{> button class="profile__footer_data" title="Сохранить" onClick="window.goToPage('profile')"}}
-        </div>
+        <form>
+            <div class="profile__content">
+                <div class="profile__content_wrapper">
+                    {{>title title="Старый пароль"}}
+                    {{> input class="profile__content_input" name="oldPassword" type="text" placeholder="********"}}
+                </div>
+                <div class="profile__content_wrapper">
+                    {{>title title="Новый пароль"}}
+                    {{> input class="profile__content_input" name="newPassword" type="text" placeholder="********"}}
+                </div>
+                <div class="profile__content_wrapper">
+                    {{>title title="Повторите новый пароль"}}
+                    {{> input class="profile__content_input" name="newPassword" type="text" placeholder="********"}}
+                </div>
+            </div>
+            <div class="profile__footer">
+                {{> button class="profile__footer_data" type="submit" title="Сохранить" onClick="window.goToPage('profile')"}}
+            </div>
+        </form>
     </div>    
 </div>
    
