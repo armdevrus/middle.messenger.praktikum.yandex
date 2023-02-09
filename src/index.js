@@ -20,6 +20,7 @@ import "./components/input";
 import "./components/button";
 import "./components/img";
 import "./index.pcss";
+import './variables/css/colors.pcss'
 
 import Ellipse from "./images/Ellipse.png";
 
