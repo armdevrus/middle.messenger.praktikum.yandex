@@ -1,0 +1,41 @@
+<div class="profile">
+    {{> button class="profile__button_back" title="<" onClick="window.goToPage('chatlist')"}}
+    <div class="profile__wrapper">
+        <div class="profile__head">
+        {{>img avatar=userAvatarUrl alt="Ellipse"}}
+        {{!-- В этом блоке реализую в след. спринте <input type="button" name="avatar"> --}}
+        </div>
+        <form>
+            <div class="profile__content">
+                <div class="profile__content_wrapper">
+                    {{>title title="Почта"}}
+                    {{> input class="profile__content_input" type="text" name="email" placeholder="pochta@yandex.ru"}}
+                </div>
+                <div class="profile__content_wrapper">
+                    {{>title title="Логин"}}
+                    {{> input class="profile__content_input" type="text" name="login" placeholder="ivanivanov"}}
+                </div>
+                <div class="profile__content_wrapper">
+                    {{>title title="Имя"}}
+                    {{> input class="profile__content_input" type="text" name="first_name" placeholder="Иван"}}
+                </div>
+                <div class="profile__content_wrapper">
+                    {{>title title="Фамилия"}}
+                    {{> input class="profile__content_input" type="text" name="second_name" placeholder="Иванов"}}
+                </div>
+                <div class="profile__content_wrapper">
+                    {{>title title="Имя в чате"}}
+                    {{> input class="profile__content_input" type="text" name="display_name" placeholder="Иван"}}
+                </div>
+                <div class="profile__content_wrapper">
+                    {{>title title="Телефон"}}
+                    {{> input class="profile__content_input" type="text" name="phone" placeholder="+7 (900) 957-09-80"}}
+                </div>
+            </div>
+            <div class="profile__footer">
+                {{> button class="profile__footer_data" type="submit" title="Сохранить" onClick="window.goToPage('profile')"}}
+            </div>
+        </form>
+    </div>    
+</div>
+   

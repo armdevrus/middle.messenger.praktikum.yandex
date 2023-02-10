@@ -1,0 +1,41 @@
+<div class="profile">
+    {{> button class="profile__button_back" title="<" onClick="window.goToPage('chatlist')"}}
+    <div class="profile__wrapper">
+        <div class="profile__head">
+        {{>img avatar=userAvatarUrl alt="Ellipse"}}
+        {{>title title="Иван"}}
+        </div>
+        <div class="profile__content">
+           <div class="profile__content_wrapper">
+            {{>title title="Почта"}}
+            {{>title title="pochta@yandex.ru" class="profile__content_data"}}
+           </div>
+           <div class="profile__content_wrapper">
+            {{>title title="Логин"}}
+            {{>title title="ivanivanov" class="profile__content_data"}}
+           </div>
+           <div class="profile__content_wrapper">
+            {{>title title="Имя"}}
+            {{>title title="Иван" class="profile__content_data"}}
+           </div>
+           <div class="profile__content_wrapper">
+            {{>title title="Фаимлия"}}
+            {{>title title="Иванов" class="profile__content_data"}}
+           </div>
+           <div class="profile__content_wrapper">
+            {{>title title="Имя в чате"}}
+            {{>title title="Иван" class="profile__content_data"}}
+           </div>
+           <div class="profile__content_wrapper">
+            {{>title title="Телефон"}}
+            {{>title title="+7 (909) 987-39-30" class="profile__content_data"}}
+           </div>
+        </div>
+        <div class="profile__footer">
+            {{> button class="profile__footer_btn" title="Изменить данные" onClick="window.goToPage('profiledata')"}}
+            {{> button class="profile__footer_btn" title="Изменить пароль" onClick="window.goToPage('profilepass')"}}
+            {{> button class="profile__footer_btn out" title="Выйти" onClick="window.goToPage('signin')"}}
+        </div>
+    </div>    
+</div>
+   
